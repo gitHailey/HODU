@@ -1,0 +1,376 @@
+html, body{
+    max-width: 1920px;
+}
+
+main, footer, header{
+    width: 1280px;
+    /*padding-right: 320px;*/
+    /*padding-left: 320px;*/
+}
+
+header{
+    width: 1920px;
+    height: 900px;
+    background-color:#F2E9D8;
+    padding-top: 30px;
+}
+
+.menuHead{
+    /*position: absolute;*/
+    width: 1280px;
+    margin-left: 320px;
+}
+
+header button{
+    background: transparent;
+    border: none;
+    color: black;
+    margin-right:10px;
+    height: 50px;
+    font-size: 16px;
+}
+
+.down{
+    background-color: #D97652;
+    color: white;
+    width: 140px;
+    border-radius: 40px;
+    font-size: 16px;
+}
+
+.menu .down{
+    margin-left: 50px;
+}
+
+.menu, .navigate{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.navigate img{
+    width: 130px;
+    height: 40px;
+}
+
+.boxCatPic img{
+    width: 415px;
+    height: 766px;
+}
+
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content strong{
+    font-size: 48px;
+    line-height: 60px;
+
+}
+.content p{
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.write {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; /* 아이템을 시작 부분에 정렬 (왼쪽에 배치) */
+    margin-top: 200px;
+}
+
+.boxCatPic {
+    display: flex;
+    flex-direction: column; /* 사진을 세로로 정렬하기 위해 flex-direction 추가 */
+    align-items: flex-end; /* 아이템을 끝 부분에 정렬 (아래에 배치하여 수직 정렬) */
+    margin-left: 20px; /* 왼쪽 간격을 조정하여 .write와의 간격을 늘립니다 */
+    margin-top: -475px;
+}
+
+.lyingCat{
+    display: flex;
+    justify-content: space-between;
+    /*margin-left: 100px;*/
+}
+
+.lyingCat img{
+    width: 660px;
+    height: 390px;
+    border-radius: 30px;
+    filter: drop-shadow(10px 10px 10px #00000040);
+    margin-top: 80px;
+    margin-left: 350px;
+}
+
+.textContent{
+    margin-top: 170px;
+    margin-right: -300px;
+}
+
+.textContent strong{
+    font-size: 36px;
+    line-height: 45px;
+}
+.endlessPics{
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.catRow1, .catRow2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.catEx img{
+    margin: 72px;
+    filter: drop-shadow(10px 10px 10px #00000040);
+    border-radius: 40px;
+}
+
+.endlessPics p{
+    font-size: 48px;
+    line-height: 60px;
+    color: #D97652;
+}
+
+.endlessPics h4:nth-of-type(1),  .endlessPics h4:nth-of-type(2){
+    margin: -20px;
+    margin-top: 10px;
+}
+.endlessPics h4:nth-of-type(2) {
+    margin-bottom: 50px;
+}
+.endlessPics strong{
+    color: #D97652;
+}
+.endlessPics h3{
+    font-size: 24px;
+}
+
+.endlessPics button{
+    background-color: #D97652;
+    color: white;
+    width: 143px;
+    height: 50px;
+    gap: 10px;
+    border-radius: 40px;
+    border: none;
+}
+
+.jb-division-line {
+    border-top: 1px solid #C4C4C4;
+    margin-top: 100px ;
+    margin-bottom: 100px;
+    width: 1920px;
+}
+
+/*.map{*/
+
+/*}*/
+
+#mapIn{
+    width: 1278px;
+    height: 520px;
+}
+
+.map{
+    position: relative;
+    left: 320px;
+}
+
+.map h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.map p{
+    font-size: 16px;
+    margin-bottom: 48px;
+}
+
+.contact img{
+    position: absolute;
+    width: 1920px;
+    height: 340px;
+    object-fit: cover;
+    margin-top: 200px;
+}
+
+.subscribe{
+    position: relative;
+    background-color: #263140;
+    width: 1280px;
+    height: 201px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    left: 320px;
+    margin-top: 100px;
+}
+
+.title {
+    margin-top: 10px;
+    margin-left:50px;
+    color: white;
+}
+
+.title h2{
+    font-size: 36px;
+    margin-bottom: -10px;
+}
+
+.title p{
+    font-size: 14px;
+}
+
+.email{
+    margin-right:50px;
+}
+
+.email input{
+    position: relative;
+    width: 530px;
+    height: 60px;
+    border-radius: 60px;
+    display: flex;
+    top: 70px;
+    padding-left: 70px;
+
+}
+
+.email button{
+    position: absolute;
+    width: 135px;
+    height: 50px;
+    background-color: #D97652;
+    border-radius: 40px;
+    padding: 15px 29px 15px 29px;
+    top: 78px;
+    right: 60px;
+    border: none;
+    color: white;
+}
+
+.email img{
+    position: absolute;
+    top: 90px;
+    right: 600px;
+}
+
+.email input::placeholder{
+    color: #767676;
+}
+
+
+.modal{
+    /*position: relative;*/
+    display: none;
+    /*border: solid black;*/
+    width: 600px;
+    height: 400px;
+    /*display: flex;*/
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal img{
+    width: 110px;
+    height: 112px;
+    margin-top: 60px;
+    line-height: 45px;
+}
+
+.modal h2{
+    font-size: 36px;
+    margin-top: 24px;
+    color: #D97652;
+}
+
+.modal p{
+    font-size: 14px;
+    margin-top: -20px;
+}
+
+.modal button{
+    width: 183px;
+    height: 50px;
+    background-color: #D97652;
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin-top: 38px;
+}
+
+footer .bar{
+    position: fixed;
+    bottom: 0;
+    width: 1920px;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+
+
+/*1차 수정*/
+.hover {
+    width: 50px;
+    height: 50px;
+    clip-path: circle(50% at center);
+    position: fixed;
+    bottom: 140px;
+    left: 1850px;
+    border: none;
+
+}
+
+.hover img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+}
+.barLogo{
+    width: 226px;
+    height: 70px;
+}
+
+
+.barLogo, .contactLogos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 320px;
+}
+
+.contactLogos {
+    margin-left: 900px;
+}
+
+.contactLogos button {
+    width: 42px;
+    height: 42px;
+    margin-left: 10px;
+    background: #D97652;
+    border: none;
+    border-radius: 100%;
+}
+.contactLogos img{
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 1px;
+}
+
+
