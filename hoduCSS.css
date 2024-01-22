@@ -4,8 +4,9 @@ html, body{
 
 main, footer, header{
     width: 1280px;
-    /*padding-right: 320px;*/
-    /*padding-left: 320px;*/
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
 }
 
 header{
@@ -28,6 +29,8 @@ header button{
     margin-right:10px;
     height: 50px;
     font-size: 16px;
+    cursor: pointer;
+
 }
 
 .down{
@@ -63,7 +66,7 @@ header button{
 .content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    /*align-items: flex-start;*/
 }
 
 .content strong{
@@ -81,7 +84,7 @@ header button{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start; /* 아이템을 시작 부분에 정렬 (왼쪽에 배치) */
+    /*align-items: flex-start; */
     margin-top: 200px;
 }
 
@@ -135,6 +138,10 @@ header button{
     margin: 72px;
     filter: drop-shadow(10px 10px 10px #00000040);
     border-radius: 40px;
+    transition: transform 0.3s ease;
+}
+.catEx img:hover{
+    transform: scale(1.1);
 }
 
 .endlessPics p{
@@ -165,6 +172,7 @@ header button{
     gap: 10px;
     border-radius: 40px;
     border: none;
+    cursor: pointer;
 }
 
 .jb-division-line {
@@ -173,10 +181,6 @@ header button{
     margin-bottom: 100px;
     width: 1920px;
 }
-
-/*.map{*/
-
-/*}*/
 
 #mapIn{
     width: 1278px;
@@ -259,6 +263,8 @@ header button{
     right: 60px;
     border: none;
     color: white;
+    cursor: pointer;
+
 }
 
 .email img{
@@ -273,14 +279,16 @@ header button{
 
 
 .modal{
-    /*position: relative;*/
+    background-color: #F2E9D8;
     display: none;
-    /*border: solid black;*/
     width: 600px;
     height: 400px;
     /*display: flex;*/
     align-items: center;
     flex-direction: column;
+    margin-top: 50px;
+    margin-left: 640px;
+
 }
 
 .modal img{
@@ -309,6 +317,9 @@ header button{
     font-size: 16px;
     border: none;
     margin-top: 38px;
+    border-radius: 40px;
+    cursor: pointer;
+
 }
 
 footer .bar{
@@ -336,6 +347,7 @@ footer .bar{
 }
 
 .hover img {
+    background-color: white;
     width:100%;
     height: 100%;
     object-fit: cover;
@@ -365,6 +377,8 @@ footer .bar{
     background: #D97652;
     border: none;
     border-radius: 100%;
+    cursor: pointer;
+
 }
 .contactLogos img{
     width: 25px;
@@ -373,4 +387,44 @@ footer .bar{
     margin-left: 1px;
 }
 
+#show img {
+    width: 378px;
+    border-radius: 10px;
+}
 
+#show {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#show li {
+    width: 378px;
+    flex: 0 0 calc(33.3333% - 16px);
+}
+
+#show li img {
+    width: 378px;
+    border-radius: 20px;
+    filter: drop-shadow(10px 10px 10px #00000040);
+    margin-bottom: 72px;
+}
+
+#show li img:hover{
+    transform: scale(1.1);
+}
+
+#endlessPics ul li {
+    flex: 0 0 calc(33.3333% - 16px);
+    width: 378px;
+    transition: transform 0.3s ease; /* 호버 트랜지션 효과 추가 */
+
+}
+
+#endlessPics ul li:hover{
+    transform: scale(1.1);
+}
