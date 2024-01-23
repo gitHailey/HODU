@@ -16,18 +16,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// 지도 api
-var mapContainer = document.getElementById('mapIn'), // 지도를 표시할 div
+// 지도 
+var mapContainer = document.getElementById('mapIn'),
     mapOption = {
-        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
+        center: new kakao.maps.LatLng(33.450701, 126.570667), 
+        level: 3 
     };
 
-// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
 var map = new kakao.maps.Map(mapContainer, mapOption);
 
-
-// 여기까지는 잘 돌아가는 코드들
 
 // 무한 스크롤
 document.addEventListener('DOMContentLoaded', function () {
