@@ -90,9 +90,9 @@ header button{
 
 .boxCatPic {
     display: flex;
-    flex-direction: column; /* 사진을 세로로 정렬하기 위해 flex-direction 추가 */
-    align-items: flex-end; /* 아이템을 끝 부분에 정렬 (아래에 배치하여 수직 정렬) */
-    margin-left: 20px; /* 왼쪽 간격을 조정하여 .write와의 간격을 늘립니다 */
+    flex-direction: column;
+    align-items: flex-end; 
+    margin-left: 20px; 
     margin-top: -475px;
 }
 
@@ -421,7 +421,7 @@ footer .bar{
 #endlessPics ul li {
     flex: 0 0 calc(33.3333% - 16px);
     width: 378px;
-    transition: transform 0.3s ease; /* 호버 트랜지션 효과 추가 */
+    transition: transform 0.3s ease; 
 
 }
 
